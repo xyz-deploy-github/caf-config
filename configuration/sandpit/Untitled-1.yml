@@ -1,0 +1,66 @@
+    "cloudName": "AzureCloud",
+    "homeTenantId": "bfd87e99-6fbe-4bd0-ad63-94a28fcd7a5a",
+    "id": "3037e574-9b2c-4a87-b222-bfe9247efaf8",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Pay-As-You-Go Dev/Test",
+    "state": "Enabled",
+    "tenantId": "bfd87e99-6fbe-4bd0-ad63-94a28fcd7a5a",
+    "user": {
+      "name": "morris.jr@nerd411.com",
+      "type": "user"
+
+      |  $$$$$$/| $$  | $$| $$            | $$  | $$|  $$$$$$/   \  $/ |  $$$$$$$| $$
+ \______/ |__/  |__/|__/            |__/  |__/ \______/     \_/   \_______/|__/
+
+
+              version: aztfmod/rover:1.0.1-2106.3012
+
+@calling verify_azure_session
+Checking existing Azure session
+@calling process_target_subscription
+Set TF_VAR_tfstate_subscription_id variable to current session's subscription.
+caf_command
+target_subscription_id 3037e574-9b2c-4a87-b222-bfe9247efaf8
+TF_VAR_tfstate_subscription_id 3037e574-9b2c-4a87-b222-bfe9247efaf8
+Resources from this landing zone are going to be deployed in the following subscription:
+{
+  "environmentName": "AzureCloud",
+  "homeTenantId": "bfd87e99-6fbe-4bd0-ad63-94a28fcd7a5a",
+  "id": "3037e574-9b2c-4a87-b222-bfe9247efaf8",
+  "isDefault": true,
+  "managedByTenants": [],
+  "name": "Pay-As-You-Go Dev/Test",
+  "state": "Enabled",
+  "tenantId": "bfd87e99-6fbe-4bd0-ad63-94a28fcd7a5a",
+  "user": {
+    "name": "morris.jr@nerd411.com",
+    "type": "user"
+  }
+}
+debug: 3037e574-9b2c-4a87-b222-bfe9247efaf8
+Tfstates subscription set to 3037e574-9b2c-4a87-b222-bfe9247efaf8 (Pay-As-You-Go Dev/Test)
+
+
+mode                          : ''
+terraform command output file : ''
+terraform plan output file    : ''
+tf_action                     : ''
+command and parameters        : ''
+
+level (current)               : 'level0'
+environment                   : 'sandpit'
+workspace                     : 'tfstate'
+tfstate                       : ''
+tfstate subscription id       : '3037e574-9b2c-4a87-b222-bfe9247efaf8'
+target subscription           : 'Pay-As-You-Go Dev/Test'
+CI/CD enabled                 : 'false'
+Symphony Yaml file path       : ''
+Run all tasks                 : 'true'
+
+@calling process_actions
+
+You can deploy a landingzone with the rover by running:
+  rover -lz [landingzone_folder_name] -a [plan|apply|destroy|validate|refresh|graph|import|output|taint|'state list'|'state rm'|'state show']
+
+vscode@68f88454f6d1:/tf/caf$
